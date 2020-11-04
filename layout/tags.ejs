@@ -1,0 +1,16 @@
+<!-- <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+
+<article class="article">
+  <h3 class="category-count">
+    <i class="fa fa-tags" aria-hidden="true"></i>
+    Tags: &nbsp;<%= site.tags.length %> 
+  </h3>
+  
+  <div class="tag-cloud">
+    <%- tagcloud({
+      min_font: 20, 
+      max_font: 35, 
+      amount: 999
+    }) %>
+  </div>
+</article>

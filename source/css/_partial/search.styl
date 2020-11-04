@@ -1,0 +1,64 @@
+// 搜索功能整体
+#site_search {
+  width: 100%;
+  float: right;
+}
+
+// 搜索输入框
+#local-search-input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  background: transparent;
+  width: 100%;
+}
+
+// 清除输入框自动填充预览色
+#local-search-input:-webkit-autofill {
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+// 搜索结果
+#local-search-result {
+  overflow: hidden;
+  width: 100%;
+}
+
+p.search-result {
+  color: #F8F1E2 !important;
+}
+  
+ul.search-result-list {
+  list-style-type: none;
+  padding-left: 0px;
+  margin: 0;
+  height: 300px;
+  background: #3D3B33;
+  position: absolute;
+  overflow: auto;
+  border-radius: 5px;
+  box-sizing: border-box;
+  z-index: 999;
+}
+
+ul.search-result-list li {
+  padding: 0 5px;
+}
+ul.search-result-list p {
+  width: 100% !important;
+}
+
+a.search-result-title {
+  color: #0593F3;
+  font-weight: bold;
+}
+
+p.search-result {
+  color = #555;
+}
+
+// 被检索到的关键字
+em.search-keyword {
+  background: #4088b8;
+  font-weight: bold;
+}

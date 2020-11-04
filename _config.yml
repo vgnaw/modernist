@@ -1,0 +1,23 @@
+menu:
+  # Home: /
+  Archives: /archives
+  Tags: /tags
+  Categories: /categories
+  # About: /about
+  # Search: /search
+  # rss: /atom.xml
+  # V
+local_search:
+	enable: true
+
+archive_date_format: MMM DD
+fancybox: true
+
+duoshuo_shortname:
+
+google_analytics:
+favicon: /favicon.ico
+
+
+# 添加目录
+#toc: true # 该值为1时，想要给文章添加目录，需要在文章头添加代码：toc: true；该值为2时，会自动给每篇文章添加目录

@@ -1,0 +1,26 @@
+<header id="header">
+  <div class="blog-title">
+    <h1><a href="<%- config.root %>"><%= config.title %></a></h1>
+    <p><a href="<%- config.root %>"><% if (config.subtitle){ %><%= config.subtitle %><% } %></a></p>
+  </div>
+  <nav class="nav">
+    <ul class="nav-ul">
+      <% for (var i in theme.menu){ %>
+        <li><a href="<%- theme.menu[i] %>"><%= i %></a></li>
+      <% } %>
+      <% if (theme.rss) { %>
+        <li><a href="<%- theme.rss %>"><%- __('rss_title') %></a></li>
+      <% } %>
+    </ul>
+
+    <div id="site_search">
+      <input type="text"  id="local-search-input" name="q" results="0" placeholder="search.." class="form-control"/>
+      <div id="local-search-result"></div>
+    </div>
+    
+    <div class="clearfix"></div>
+  </nav>
+  <div class="clearfix"></div>
+  
+
+</header>
